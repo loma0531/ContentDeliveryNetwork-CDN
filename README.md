@@ -79,55 +79,6 @@ The server will be available at `http://localhost:3000`
    npm start
    ```
 
-## Environment Variables Explained
-
-| Variable | Description | Required | Default |
-|----------|-------------|----------|---------|
-| MONGODB_URI | MongoDB connection string | Yes | - |
-| NEXTAUTH_URL | Full URL of your application | Yes | - |
-| ADMIN_EMAIL | Administrator email | Yes | - |
-| ADMIN_PASSWORD | Administrator password | Yes | - |
-| CDN_BASE_URL | Base URL for CDN assets | Yes | - |
-| NEXT_PUBLIC_MAX_UPLOAD_SIZE_MB | Maximum upload size in MB | No | 10240 |
-
-## API Endpoints
-
-- `GET /api/files` - List all files
-- `POST /api/upload` - Upload new file
-- `GET /api/files/:id` - Get file details
-- `DELETE /api/files/:id` - Delete file
-
-## Troubleshooting
-
-### Common Issues
-
-1. **MongoDB Connection Failed**
-   - Check if MongoDB is running
-   - Verify connection string in .env.local
-   - Ensure network connectivity
-
-2. **Upload Fails**
-   - Check file size limits
-   - Verify storage permissions
-   - Check network connectivity
-
-3. **Authentication Issues**
-   - Clear browser cookies
-   - Verify admin credentials
-   - Check NEXTAUTH_URL configuration
-
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit changes (`git commit -m 'Add amazing feature'`)
-4. Push to branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
 ## License
 
 This project is licensed under the MIT License.
-
-## Support
-
-For support, email support@example.com or open an issue in the repository.
