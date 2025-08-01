@@ -41,8 +41,8 @@ A robust and scalable Content Delivery Network system
    CDN_BASE_URL=https://example.com/
    NEXT_PUBLIC_MAX_UPLOAD_SIZE_MB=10240  # 10GB in MB
    # Security (Add in production)
-   # NEXTAUTH_SECRET=your-secret-key
-   # JWT_SECRET=your-jwt-secret
+   NEXTAUTH_SECRET=your-secret-key
+   WT_SECRET=your-jwt-secret
    ```
 
    ⚠️ **Security Warning**: Never use default admin credentials in production!
@@ -81,4 +81,4 @@ The server will be available at `http://localhost:3000`
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the GNU GPL 3.0  License.
